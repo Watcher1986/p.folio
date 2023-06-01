@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
@@ -12,7 +12,6 @@ const Navbar = () => {
   const handleActive = (e) => setActive(e.target.textContent);
   const handleToggle = () => setToggle(!toggle);
 
-  useEffect(() => {}, []);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -33,7 +32,7 @@ const Navbar = () => {
           />
           <p className='text-white font-bold text-[18px] cursor-pointer flex'>
             Denis &nbsp;
-            <span className='sm:block hidden'>| ARTMinded</span>
+            <span className='sm:block hidden'>| Sokolenko</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
