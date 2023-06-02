@@ -1,19 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import {
-  Contact,
-  // Contact,
-  Hero,
-  Navbar,
-  StarsCanvas,
-  // Works,
-  // StartsCanvas,
-} from './components';
+import { Hero, Navbar, StarsCanvas } from './components';
 import { About } from './views/about';
 import { Experience } from './views/experience';
 import { Tech } from './views/tech';
 import { Works } from './views/works';
 import { Feedbacks } from './views/feedback';
+import { Contact } from './views/contact';
 
 const App = () => {
   return (

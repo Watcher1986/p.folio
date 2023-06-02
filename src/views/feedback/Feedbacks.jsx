@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../../styles';
 import { SectionWrapper } from '../../hoc';
-import { fadeIn, textVariant } from '../../utils/motion';
+import { textVariant } from '../../utils/motion';
 import { testimonials } from '../../constants';
 import FeedbackCard from './FeedbackCard';
 
@@ -11,7 +11,7 @@ const Feedbacks = () => {
   return (
     <div className='mt-12 bg-black-100 rounded-[20px]'>
       <div
-        className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
+        className={`${styles.padding} bg-[#20194f] rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>

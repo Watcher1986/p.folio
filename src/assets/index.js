@@ -21,14 +21,12 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import nda from './company/nda.webp';
+import ndaicon from './company/ndaicon.svg';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import appstore from './apple-store.png';
+import catsgallery from './cats-gallery.png';
+import photosgallery from './photos-gallery.png';
 
 export {
   backend,
@@ -51,12 +49,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  appstore,
+  catsgallery,
+  photosgallery,
   wLogo,
+  nda,
+  ndaicon,
 };
