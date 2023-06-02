@@ -5,7 +5,7 @@
 
 #### To itstall the project run npm/yarn i/install
 
-#### To run project in dev mode enter npm run dev
+#### To run project in dev mode enter npm/yarn run dev
 
 ## Created with:
 
