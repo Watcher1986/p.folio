@@ -47,13 +47,11 @@ const Contact = () => {
         'p8Ys2x7B8PxZ1r6ZE'
       )
       .then(
-        (result) => {
+        () => {
           setLoading(false);
           alert(
             'Thank you for your message. I will get back to you as soon as possible.'
           );
-
-          console.log(result.text);
 
           setForm({
             name: '',
@@ -63,7 +61,7 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.log(error.text);
+          console.error(error.text);
 
           alert('Something went wrong. Please try again later.');
         }
