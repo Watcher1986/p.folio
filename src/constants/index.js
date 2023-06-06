@@ -117,7 +117,7 @@ const experiences = [
     company_name: 'Freelance',
     icon: ndaicon,
     iconBg: '#383E56',
-    date: 'Jan 2020 - July 2021',
+    date: 'Jan 2020 - July 2020',
     points: [
       'Designed and improved markup layouts based on client-specific requirements',
     ],
@@ -127,7 +127,7 @@ const experiences = [
     company_name: 'Bodyvic',
     icon: ndaicon,
     iconBg: '#E6DEDD',
-    date: 'July 2021 - Dec 2021',
+    date: 'July 2020 - Dec 2020',
     points: [
       'Worked on transitioning a legacy project from JQuery to Next.js.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -140,7 +140,7 @@ const experiences = [
     company_name: 'Under NDA',
     icon: ndaicon,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: 'Jan 2021 - Jan 2022',
     points: [
       'Developed microservices using React, JS/TS within a project structured as microservices.',
       'Employed technologies and tools including React (react-redux and react-router-dom), Redux (thunk and conditional reducers), React Context API, TypeScript, NodeJS, GraphQL, Apollo Client, Styled-components, React Bootstrap, and Lodash.',
@@ -157,7 +157,7 @@ const experiences = [
     company_name: 'Under NDA',
     icon: ndaicon,
     iconBg: '#E6DEDD',
-    date: 'Dec 2021 - Present',
+    date: 'Feb 2022 - Present',
     points: [
       'Developed and maintained CMS platforms for two separate company departments.',
       'I developed a mobile-first application with a focus on improving customer support and enhancing overall user experience. Through this project, I honed my skills in creating intuitive user interfaces and optimizing performance for mobile devices. By leveraging best practices and cutting-edge technologies, I was able to deliver a high-quality application that exceeded user expectations.',
