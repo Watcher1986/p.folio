@@ -2,7 +2,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { Link } from 'react-router-dom';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { styles } from '../../styles';
@@ -138,24 +137,33 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='absolute bottom-1 inset-x-1/2 flex flex-row justify-center align-middle gap-4 text-white text-4xl lg:text-4xl'
       >
-        <Link
-          className='text-white/90 hover:text-white'
-          href='https://www.linkedin.com/in/denis-sokolenko-098686145/'
+        <div
+          className='text-white/80 hover:text-white'
+          onClick={() =>
+            window.open(
+              'https://www.linkedin.com/in/denis-sokolenko-098686145/',
+              '_blank'
+            )
+          }
         >
           <FaLinkedin />
-        </Link>
-        <Link
-          className='text-white/90 hover:text-white'
-          href='https://github.com/Watcher1986'
+        </div>
+        <div
+          className='text-white/80 hover:text-white'
+          onClick={() =>
+            window.open('https://github.com/Watcher1986', '_blank')
+          }
         >
           <FaGithub />
-        </Link>
-        <Link
-          className='text-white/90 hover:text-white'
-          href='https://twitter.com/SokolenkoDenis'
+        </div>
+        <div
+          className='text-white/80 hover:text-white'
+          onClick={() =>
+            window.open('https://twitter.com/SokolenkoDenis', '_blank')
+          }
         >
           <FaTwitter />
-        </Link>
+        </div>
       </motion.div>
     </div>
   );
