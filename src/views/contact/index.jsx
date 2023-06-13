@@ -2,6 +2,8 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { styles } from '../../styles';
 import { EarthCanvas } from '../../components';
@@ -69,13 +71,13 @@ const Contact = () => {
   };
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='relative xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-transparent p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form
           ref={formRef}
@@ -118,7 +120,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-[#20194f] hover:bg-secondary transition-all duration-300 ease-in-out w-fit text-white font-bold shadow-md  py-3 px-8 outline-none shadow-primary rounded-xl'
+            className='bg-[#20194f] hover:bg-secondary transition-all duration-300 ease-in-out w-fit text-white font-bold shadow-md  py-3 px-8 outline-none shadow-primary rounded-xl mb-5'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
@@ -130,6 +132,30 @@ const Contact = () => {
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
+      </motion.div>
+
+      <motion.div
+        variants={slideIn('left', 'tween', 0.2, 1)}
+        className='absolute bottom-1 inset-x-1/2 flex flex-row justify-center align-middle gap-4 text-white text-4xl lg:text-4xl'
+      >
+        <Link
+          className='text-white/90 hover:text-white'
+          href='https://www.linkedin.com/in/denis-sokolenko-098686145/'
+        >
+          <FaLinkedin />
+        </Link>
+        <Link
+          className='text-white/90 hover:text-white'
+          href='https://github.com/Watcher1986'
+        >
+          <FaGithub />
+        </Link>
+        <Link
+          className='text-white/90 hover:text-white'
+          href='https://twitter.com/SokolenkoDenis'
+        >
+          <FaTwitter />
+        </Link>
       </motion.div>
     </div>
   );
