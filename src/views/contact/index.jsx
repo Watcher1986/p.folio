@@ -73,7 +73,7 @@ const Contact = () => {
     <div className='relative xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-transparent p-8 rounded-2xl'
+        className='flex-[0.75] bg-transparent rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -123,6 +123,36 @@ const Contact = () => {
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
+
+          <div className='bottom-1 inset-x-1/2 flex flex-row justify-center align-middle gap-4 text-white text-4xl'>
+            <div
+              className='text-white/80 hover:text-white'
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/denis-sokolenko-098686145/',
+                  '_blank'
+                )
+              }
+            >
+              <FaLinkedin />
+            </div>
+            <div
+              className='text-white/80 hover:text-white'
+              onClick={() =>
+                window.open('https://github.com/Watcher1986', '_blank')
+              }
+            >
+              <FaGithub />
+            </div>
+            <div
+              className='text-white/80 hover:text-white'
+              onClick={() =>
+                window.open('https://twitter.com/SokolenkoDenis', '_blank')
+              }
+            >
+              <FaTwitter />
+            </div>
+          </div>
         </form>
       </motion.div>
 
@@ -131,39 +161,6 @@ const Contact = () => {
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
-      </motion.div>
-
-      <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
-        className='absolute bottom-1 inset-x-1/2 flex flex-row justify-center align-middle gap-4 text-white text-4xl lg:text-4xl'
-      >
-        <div
-          className='text-white/80 hover:text-white'
-          onClick={() =>
-            window.open(
-              'https://www.linkedin.com/in/denis-sokolenko-098686145/',
-              '_blank'
-            )
-          }
-        >
-          <FaLinkedin />
-        </div>
-        <div
-          className='text-white/80 hover:text-white'
-          onClick={() =>
-            window.open('https://github.com/Watcher1986', '_blank')
-          }
-        >
-          <FaGithub />
-        </div>
-        <div
-          className='text-white/80 hover:text-white'
-          onClick={() =>
-            window.open('https://twitter.com/SokolenkoDenis', '_blank')
-          }
-        >
-          <FaTwitter />
-        </div>
       </motion.div>
     </div>
   );
