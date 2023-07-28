@@ -2,14 +2,14 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 
-import 'react-vertical-timeline-component/style.min.css';
+import { SectionWrapper } from '../../hoc';
+import ExperienceCard from './ExperienceCard';
+
+import { textVariant } from '../../utils/motion';
+import { experiences } from '../../constants';
 
 import { styles } from '../../styles';
-import { experiences } from '../../constants';
-import { SectionWrapper } from '../../hoc';
-import { textVariant } from '../../utils/motion';
-
-import ExperienceCard from './ExperienceCard';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
   return (
@@ -21,8 +21,8 @@ const Experience = () => {
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
-          {experiences.map((exp, idx) => (
-            <ExperienceCard key={idx} experience={exp} />
+          {experiences.map((exp) => (
+            <ExperienceCard key={exp?.company_name} experience={exp} />
           ))}
         </VerticalTimeline>
       </div>

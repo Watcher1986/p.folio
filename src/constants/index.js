@@ -113,34 +113,26 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Web Developer',
-    company_name: 'Freelance',
-    icon: ndaicon,
-    iconBg: '#383E56',
-    date: 'Jan 2020 - July 2020',
-    points: [
-      'Designed and improved markup layouts based on client-specific requirements',
-    ],
-  },
-  {
-    title: 'Frontend Developer',
-    company_name: 'Bodyvic',
+    title: 'Frontend Engineer',
+    company_name: 'Under NDA, Germany',
     icon: ndaicon,
     iconBg: '#E6DEDD',
-    date: 'July 2020 - Dec 2020',
+    date: '02/2022 - Present',
     points: [
-      'Worked on transitioning a legacy project from JQuery to Next.js.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Developed and maintained CMS platforms for two separate company departments.',
+      'I developed a mobile-first application with a focus on improving customer support and enhancing overall user experience. Through this project, I honed my skills in creating intuitive user interfaces and optimizing performance for mobile devices. By leveraging best practices and cutting-edge technologies, I was able to deliver a high-quality application that exceeded user expectations.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Collaborated with the team to develop optimal architectural solutions for scalability, flexibility, and maintenance of the codebase.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Built a new cross-domain CMS platform with a whole new UI/UX, using SOLID patterns, and best practices approach for handling business logic and client-server data flow, which led to a tangible performance and overall view more predictable and consistency.',
     ],
   },
+
   {
-    title: 'Frontend Engineer',
+    title: 'Frontend Engineer, Argentina',
     company_name: 'Under NDA',
     icon: ndaicon,
     iconBg: '#383E56',
-    date: 'Jan 2021 - Jan 2022',
+    date: '07/2020 - 01/2022',
     points: [
       'Developed microservices using React, JS/TS within a project structured as microservices.',
       'Employed technologies and tools including React (react-redux and react-router-dom), Redux (thunk and conditional reducers), React Context API, TypeScript, NodeJS, GraphQL, Apollo Client, Styled-components, React Bootstrap, and Lodash.',
@@ -153,17 +145,26 @@ const experiences = [
     ],
   },
   {
-    title: 'Frontend Engineer',
-    company_name: 'Under NDA',
+    title: 'Frontend Developer, Ukraine',
+    company_name: 'Bodyvic',
     icon: ndaicon,
     iconBg: '#E6DEDD',
-    date: 'Feb 2022 - Present',
+    date: '10/2019 - 06/2020',
     points: [
-      'Developed and maintained CMS platforms for two separate company departments.',
-      'I developed a mobile-first application with a focus on improving customer support and enhancing overall user experience. Through this project, I honed my skills in creating intuitive user interfaces and optimizing performance for mobile devices. By leveraging best practices and cutting-edge technologies, I was able to deliver a high-quality application that exceeded user expectations.',
+      'Worked on transitioning a legacy project from JQuery to Next.js.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-      'Built a new cross-domain CMS platform with a whole new UI/UX, using SOLID patterns, and best practices approach for handling business logic and client-server data flow, which led to a tangible performance and overall view more predictable and consistency.',
+      'Collaborated with the team to develop optimal architectural solutions for scalability, flexibility, and maintenance of the codebase.',
+    ],
+  },
+  {
+    title: 'Web Developer',
+    company_name: 'Freelance',
+    icon: ndaicon,
+    iconBg: '#383E56',
+    date: '11/2018 - 09/2019',
+    points: [
+      'Designed and improved markup layouts based on client-specific requirements',
     ],
   },
 ];
