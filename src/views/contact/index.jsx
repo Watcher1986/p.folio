@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { styles } from '../../styles';
 import { EarthCanvas } from '../../components';
 import { SectionWrapper } from '../../hoc';
 import { slideIn } from '../../utils/motion';
+
+import { styles } from '../../styles';
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
